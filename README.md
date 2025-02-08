@@ -53,19 +53,29 @@ Stable Diffusion is a powerful deep learning model capable of generating high-qu
     *   `omegaconf`
 
 ## Installation
+Install Python: Ensure you have Python 3.8 or higher installed. (3.10 or 3.11 are recommended).
 
-1.  **Install Python:** Ensure you have Python 3.8 or higher installed.
-2.  **Install ComfyUI:** Follow the instructions in the official ComfyUI repository to download and install the software.
-3.  **Download Stable Diffusion Model:** Download a compatible Stable Diffusion model checkpoint file.  Place the checkpoint file in the appropriate directory within your ComfyUI installation (refer to ComfyUI documentation).
-4.  **Install Dependencies:** Open a terminal or command prompt, navigate to your project directory, and create a virtual environment (recommended):
-    ```bash
-    python3 -m venv .venv  # Create a virtual environment
-    source .venv/bin/activate  # Activate the virtual environment (Linux/macOS)
-    .venv\Scripts\activate  # Activate the virtual environment (Windows)
-    ```
-    Then, install the required Python libraries:
-    ```bash
-    pip install torch torchvision torchaudio transformers numpy Pillow Flask requests tqdm filelock gradio omegaconf
+Install ComfyUI:  ComfyUI was deployed locally using the GitHub repository.  Clone the repository to your desired location. (Provide the repository link if applicable).  Follow any specific instructions in the repository for initial setup.
+
+Download Stable Diffusion Model: The v1-5-pruned-emaonly-fp16 model was downloaded from Hugging Face. (Provide the Hugging Face model link if possible).
+
+Place Model Checkpoint: The downloaded model file (v1-5-pruned-emaonly-fp16) was placed in the following directory within the ComfyUI installation: ComfyUI_windows_portable\ComfyUI\models\checkpoints.  This specific location is crucial as it's where ComfyUI looks for model files during initialization.
+
+Install Dependencies: Open a terminal or command prompt, navigate to your ComfyUI directory, and create a virtual environment (recommended):
+
+Bash
+
+python3 -m venv .venv  # Create a virtual environment
+source .venv/bin/activate  # Activate the virtual environment (Linux/macOS)
+.venv\Scripts\activate  # Activate the virtual environment (Windows)
+Then, install the required Python libraries:
+
+Bash
+
+pip install torch torchvision torchaudio transformers numpy Pillow Flask requests tqdm filelock gradio omegaconf
+(Important Note: Ensure that the PyTorch installation matches your CUDA version if you have a compatible NVIDIA GPU.  Refer to the PyTorch installation instructions for specific CUDA versions.)
+
+Run ComfyUI: Launch ComfyUI according to its documentation.  Because the model checkpoint is now in the correct directory, ComfyUI should automatically recognize it upon startup.
     ```
 
 ## Usage
