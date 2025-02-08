@@ -11,10 +11,6 @@ This project demonstrates the use of Stable Diffusion and ComfyUI for generating
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -26,8 +22,8 @@ Stable Diffusion is a powerful deep learning model capable of generating high-qu
 *   **Text-to-Image Generation:** Generate images from textual descriptions using Stable Diffusion.
 *   **Customizable Parameters:** Fine-tune image generation parameters within ComfyUI to achieve specific artistic styles and results.
 *   **Modular Design:** Easily add, remove, or rearrange nodes in ComfyUI to experiment with different image processing techniques.
-*   **(Optional) Real-time Feedback:**  (Potentially, depending on ComfyUI features) Observe previews of generated images as parameters are adjusted, accelerating the creative process.
-*   **(Optional) Extensible with Custom Scripts:** Integrate custom Python scripts and nodes into ComfyUI for advanced functionalities.
+*   **Real-time Feedback:**  (Potentially, depending on ComfyUI features) Observe previews of generated images as parameters are adjusted, accelerating the creative process.
+*   **Extensible with Custom Scripts:** Integrate custom Python scripts and nodes into ComfyUI for advanced functionalities.
 
 ## Requirements
 
@@ -81,6 +77,5 @@ Stable Diffusion is a powerful deep learning model capable of generating high-qu
 5.  **Generate Image:** Execute the workflow to generate the image.
 6.  **View Results:** The generated image will be displayed in ComfyUI.
 
-## Project Structure
 
-(Describe the organization of your project files and directories here.  For example:)
+
